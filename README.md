@@ -5,6 +5,19 @@ I am Pol Juan Santos, student of the <a href="https://www.citm.upc.edu/ing/estud
 Video Games by UPC at CITM</a>. This content is generated for the second year’s subject Project 2, under supervision of lecturer
 <a href="https://www.linkedin.com/in/mgarrigo/">Marc Garrigó</a>.
   
+## Index
+
+<a href="#intro"><b> 1. What is a Crash? </b></a>
+
+<a href="#crashre"><b> 2. What is Crash Reporting? </b></a>
+
+<a href="#crashdump"><b> 3. Crash dump and Minidump files </b></a>
+
+<a href="#visual"><b> 4. How to create a dump file in Visual Studio? </b></a>
+
+<a href="#make"><b> 5. How to make our own Crash reporter? </b></a>
+
+<a href="#biblio"><b> 6. Bibliography </b></a>
 
 <h2 id="intro"> What is a Crash? </h2>
 We call crash when a computer program such as a videogame, app or any kind fo software stops functioning as normal and exits. This is because the application performs an operation that is not allowed to do. Then, the operating system shuts down the program and  triggers a exception or signal indicating what was the reason the crash was produced. Typical causes include incorrect address values in the couter of the program, buffer overflow, accessing invalid memory addresses or attempting to execute machine instructions with bad arguments.
@@ -105,7 +118,8 @@ If you press <b>debug Native Only</b>, it will send you to where the problem or 
   
 <h2 id="make">How to make our own Crash reporter? </h2>
 So ,there you have it. You now know all the basic abot crash report, and how to use it in visual studio. But, can we make a crash reporter for our own videogame? Well, it is posible to do it.
-Down below you can read an article done by a programmer from The Witcher, explaining how was his experience proggramming one, talking about what we just saw but in action and giving some advices about the theme. 
+Down below you can read an article done by a programmer from The Witcher, explaining how was his experience proggramming one, talking about what we just saw but in action and giving some advices about the topic. 
+
 <img src="https://i.imgur.com/TOtVqjm.png?raw=true">
 <a href="http://msinilo.pl/blog2/post/p269/"> Crash handler/reporter (Win32) by Maciej Sinilo</a>
 
