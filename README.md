@@ -10,7 +10,7 @@ Video Games by UPC at CITM</a>. This content is generated for the second year’
 We call crash when a computer program such as a videogame, app or any kind fo software stops functioning as normal and exits. This is because the application performs an operation that is not allowed to do. Then, the operating system shuts down the program and  triggers a exception or signal indicating what was the reason the crash was produced. Typical causes include incorrect address values in the couter of the program, buffer overflow, accessing invalid memory addresses or attempting to execute machine instructions with bad arguments.
 In order to fix a crash, the code must be debugged, which is the process of finding and fixing the faulty code which caused the crash so the program can run smoothly again. Then, we should report the crash to get it fixed by the company.
 
-<img src="https://media1.tenor.com/images/86031337405fc540c2b56af57206ff6c/tenor.gif?itemid=8556865" width ="600" height="540">
+<img src="https://media1.tenor.com/images/86031337405fc540c2b56af57206ff6c/tenor.gif?itemid=8556865" width ="700" height="540">
 
 <h3> Crash to deskop </h3>
 A crash to deskop occurs when a program(usually videogames) unexpectedly quits,abruptly taking the user back to the deskop. Most of the time, an exception is no displayed , leaving the user without knowing what was the problem. Many times there is no apparent action that causes a crash to desktop. During normal function, the program may freeze for a shorter period of time, and then close by itself, or it may appear to be triggered by a certain action, such as loading an area. 
@@ -71,3 +71,35 @@ Minidumps are files containing the most important memory regions of a crashed pr
   <li>Meta data about the CPU architecture and the user’s operating system.</li>
  </ul>
  
+MiniDump files may or may not have heap information.
+ <ul>
+  <li><b>Dump files with heaps</b> contain a snapshot of the app's memory, including the values of variables, at the time of the dump.
+  </li>
+  <li><b>Dump files without heaps</b> are much smaller than dumps with heaps, but the debugger must load the app binaries to find symbol information. The loaded binaries must exactly match the ones running during dump creation. Dump files without heaps save the values of stack variables only.</li>
+  </ul>
+  <img src="https://www.codeproject.com/KB/applications/minidump/MiniDump.gif?raw=true">
+
+<h2 id="visual">How to create a dump file in Visual Studio? </h2>
+Now that we what dump files are used for, let's used them on visual studio.
+While you are debugging a process in Visual Studio, you can save a dump when the debugger has stopped at an exception or breakpoint.
+Before we start, you need to have Just-In-Time Debbugging enable,that allow you to attach the Visual Studio debugger to a crashed process outside of Visual Studio, and then save a dump file from the debugger. <a href="https://docs.microsoft.com/en-us/visualstudio/debugger/attach-to-running-processes-with-the-visual-studio-debugger?view=vs-2019"> Attach to running processes</a>
+
+<h3>To save a dump file</h3>
+<ul>
+  <li>While stopped at an error or breakpoint during debugging, select <b> Debug > Save Dump As</b>.
+  </li>
+  <li>In the Save Dump As dialog box, under Save as type, select Minidump or Minidump with Heap (the default).</li>
+  <li>Browse to a path and select a name for the dump file, and then select Save.</li>
+  </ul>
+<img src="https://github.com/Sauko22/Crash-Report/blob/master/web/dumpfile.png?raw=true?raw=true">
+  
+<h3>Open a dump file</h3>
+<ul>
+  <li>In Visual Studio, select <b>File > Open > File</b>.
+  </li>
+  <li>In the Open File dialog box, locate and select the dump file. It will usually have a .dmp extension. Select OK.</li>
+  </ul>
+  The Minidump File Summary window shows summary and module information for the dump file, and actions you can take.
+  <img src="https://i.stack.imgur.com/LfZFh.jpg?raw=true?raw=true">
+  If you press <b>debug Native Only</b>, it will send you to where the problem or the breakpoint produced the crash.
+  
