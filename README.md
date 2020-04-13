@@ -54,7 +54,7 @@ Blackbox records all vital information so when the application crash, you can ea
   <li>Register Contents</li>
   <li>General system info(CPU,memory,OS,etc)</li>
  </ul>
-Messages aren’t displayed anywhere, so users aren’t bothered, they don’t even know it’s happening. What to record? Well, it’s up to you. In our case, name of loaded resource, would surely be a good bet. This way, on crash all you have to do is to check latest blackbox messages (for thread that crashed). But, what are these blackbox messages? Well, will be talking about <b>Crash Dump and Mini Dump files</b>. 
+Messages aren’t displayed anywhere, so users aren’t bothered, they don’t even know it’s happening. What to record? Well, it’s up to you. In our case, name of loaded resource, would surely be a good bet. This way, on crash all you have to do is to check latest blackbox messages (for thread that crashed). But, what are these blackbox messages? Well, would be talking about <b>Crash Dump and Mini Dump files</b>. 
 
 <h3>Crash Dumps</h3>
 Crash dump or memory dump consists of the recorde state of the working memory of a program at a specific time, generally when that one has crashed.In practice, are used to assist in diagnosing and debbugging errors. Other key pieces of program state are usually dumped at the same time, including the processor registers, which may include the program counter and stack pointer, memory management information, and other processor and operating system flags and information. A snapshot dump is a memory dump requested by the computer operator or by the running program, after which the program is able to continue.
@@ -99,7 +99,25 @@ Before we start, you need to have Just-In-Time Debbugging enable,that allow you 
   </li>
   <li>In the Open File dialog box, locate and select the dump file. It will usually have a .dmp extension. Select OK.</li>
   </ul>
-  The Minidump File Summary window shows summary and module information for the dump file, and actions you can take.
-  <img src="https://i.stack.imgur.com/LfZFh.jpg?raw=true?raw=true">
-  If you press <b>debug Native Only</b>, it will send you to where the problem or the breakpoint produced the crash.
+The Minidump File Summary window shows summary and module information for the dump file, and actions you can take.
+<img src="https://i.stack.imgur.com/LfZFh.jpg?raw=true?raw=true">
+If you press <b>debug Native Only</b>, it will send you to where the problem or the breakpoint produced the crash.
   
+<h2 id="make">How to make our own Crash reporter? </h2>
+So ,there you have it. You now know all the basic abot crash report, and how to use it in visual studio. But, can we make a crash reporter for our own videogame? Well, it is posible to do it.
+Down below you can read an article done by a programmer from The Witcher, explaining how was his experience proggramming one, talking about what we just saw but in action and giving some advices about the theme. 
+<img src="https://i.imgur.com/TOtVqjm.png?raw=true">
+<a href="http://msinilo.pl/blog2/post/p269/"> Crash handler/reporter (Win32) by Maciej Sinilo</a>
+
+<h2 id="biblio">Bibliography</h2>
+
++ <a href="https://docs.sentry.io/"> Sentry Web Page</a>
++ <a href="https://en.wikipedia.org/wiki/Core_dump#MINIDUMP"> Wikipedia-Core Dump</a>
++ <a href="https://techcommunity.microsoft.com/t5/ask-the-performance-team/understanding-crash-dump-files/ba-p/372633#"> Understanding Crash Dumps Files</a>
++ <a href="https://docs.microsoft.com/en-us/windows/win32/debug/minidump-files"> MiniDumps Files</a>
++ <a href="http://msinilo.pl/blog2/post/p269/"> Crash handler/reporter (Win32) by Maciej Sinilo</a>
++ <a href="https://docs.microsoft.com/en-us/windows/win32/dxtecharts/crash-dump-analysis"> Crash Dump Analysis</a>
+
+
+
+
