@@ -41,7 +41,7 @@ Is a system software whose main function is to identify reporting crash details 
 <img src="https://media.minecraftforum.net/attachments/190/524/635939770564555905.png?raw=true">
 <i>* Minecraft crash reporter </i>
 
-Implementing crash reporting tools as very a important part of the development cycle has become an obligation,thanks to the commodity that gives. Not only for issues dicovery, but making your workflow easier. That's the case of <b>Sentry</b>, an open-source company, providing an application monitoring platform that helps you identify issues in real-time.Very used in Unreal and an excellent tool. 
+Implementing crash reporting tools as an esencial part of the development cycle has become an obligation,thanks to the commodity that gives. Not only for issues dicovery, but making your workflow easier. That's the case of <b>Sentry</b>, an open-source company, providing an application monitoring platform that helps you identify issues in real-time.Very used in Unreal and an excellent tool. 
 
 <img src="https://nextcloud.com/media/sentry-logo-black-1.png?raw=true">
 
@@ -57,7 +57,7 @@ Meanwhile, the user who encountered the error didn’t even need to send you a m
 <img src="https://sentry.io/_assets/screenshots/features-page-dash-12c65431808e7d8daf234a096446c1f0da311a0f3bcec5352e28bda60136fb16.jpg?raw=true">
 
 <h2 id="crashdump"> Crash dump and Minidump files </h2>
-However, let's get back on crash reporting. We could compare a crash report as a Blacbox, and its application as an airplane.
+However, let's get back on crash reporting. We could compare a crash report as a Blackbox, and its application as an airplane.
 <img src="https://cdn-images-1.medium.com/max/1200/1*WljD7gLyX2gr_60o501Z1A.png" width ="200" height="200">
 
 Blackbox records all vital information so when the application crash, you can easily find the reason, in this case:
@@ -93,7 +93,7 @@ MiniDump files may or may not have heap information.
   <img src="https://www.codeproject.com/KB/applications/minidump/MiniDump.gif?raw=true">
 
 <h2 id="visual">How to create a dump file in Visual Studio? </h2>
-Now that we what dump files are used for, let's used them on visual studio.
+Now that we know what dump files are used for, let's used them on visual studio.
 While you are debugging a process in Visual Studio, you can save a dump when the debugger has stopped at an exception or breakpoint.
 Before we start, you need to have Just-In-Time Debbugging enable,that allow you to attach the Visual Studio debugger to a crashed process outside of Visual Studio, and then save a dump file from the debugger. <a href="https://docs.microsoft.com/en-us/visualstudio/debugger/attach-to-running-processes-with-the-visual-studio-debugger?view=vs-2019"> Attach to running processes</a>
 
@@ -117,7 +117,7 @@ The Minidump File Summary window shows summary and module information for the du
 If you press <b>debug Native Only</b>, it will send you to where the problem or the breakpoint produced the crash.
   
 <h2 id="make">How to make our own Crash reporter? </h2>
-So ,there you have it. You now know all the basic abot crash report, and how to use it in visual studio. But, can we make a crash reporter for our own videogame? Well, it is posible to do it.
+So ,there you have it. You now know all the basic about crash report, and how to use it in visual studio. But, can we make a crash reporter for our own videogame? Well, it is posible to do it.
 Down below you can read an article done by a programmer from The Witcher, explaining how was his experience proggramming one, talking about what we just saw but in action and giving some advices about the topic. 
 
 <img src="https://i.imgur.com/TOtVqjm.png?raw=true">
