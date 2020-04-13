@@ -25,8 +25,8 @@ In order to fix a crash, the code must be debugged, which is the process of find
 
 <img src="https://media1.tenor.com/images/86031337405fc540c2b56af57206ff6c/tenor.gif?itemid=8556865" width ="700" height="540">
 
-<h3> Crash to deskop </h3>
-A crash to deskop occurs when a program(usually videogames) unexpectedly quits,abruptly taking the user back to the deskop. Most of the time, an exception is no displayed , leaving the user without knowing what was the problem. Many times there is no apparent action that causes a crash to desktop. During normal function, the program may freeze for a shorter period of time, and then close by itself, or it may appear to be triggered by a certain action, such as loading an area. 
+<h3> Crash to desktop </h3>
+A crash to desktop occurs when a program(usually videogames) unexpectedly quits,abruptly taking the user back to the desktop. Most of the time, an exception is no displayed , leaving the user without knowing what was the problem. Many times there is no apparent action that causes a crash to desktop. During normal function, the program may freeze for a shorter period of time, and then close by itself, or it may appear to be triggered by a certain action, such as loading an area. 
 
 <img src="https://github.com/Sauko22/Crash-Report/blob/master/web/loading.jpg?raw=true">
 
