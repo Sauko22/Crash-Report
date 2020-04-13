@@ -10,7 +10,7 @@ Video Games by UPC at CITM</a>. This content is generated for the second year’
 We call crash when a computer program such as a videogame, app or any kind fo software stops functioning as normal and exits. This is because the application performs an operation that is not allowed to do. Then, the operating system shuts down the program and  triggers a exception or signal indicating what was the reason the crash was produced. Typical causes include incorrect address values in the couter of the program, buffer overflow, accessing invalid memory addresses or attempting to execute machine instructions with bad arguments.
 In order to fix a crash, the code must be debugged, which is the process of finding and fixing the faulty code which caused the crash so the program can run smoothly again. Then, we should report the crash to get it fixed by the company.
 
-<img src="https://github.com/Sauko22/Crash-Report/blob/master/web/blue%20screen.png?raw=true">
+<img src="https://media1.tenor.com/images/86031337405fc540c2b56af57206ff6c/tenor.gif?itemid=8556865" width ="600" height="540">
 
 <h3> Crash to deskop </h3>
 A crash to deskop occurs when a program(usually videogames) unexpectedly quits,abruptly taking the user back to the deskop. Most of the time, an exception is no displayed , leaving the user without knowing what was the problem. Many times there is no apparent action that causes a crash to desktop. During normal function, the program may freeze for a shorter period of time, and then close by itself, or it may appear to be triggered by a certain action, such as loading an area. 
@@ -46,6 +46,7 @@ Meanwhile, the user who encountered the error didn’t even need to send you a m
 <h2 id="crashdump"> Crash dump and Minidump files </h2>
 However, let's get back on crash reporting. We could compare a crash report as a Blacbox, and its application as an airplane.
 <img src="https://cdn-images-1.medium.com/max/1200/1*WljD7gLyX2gr_60o501Z1A.png" width ="200" height="200">
+
 Blackbox records all vital information so when the application crash, you can easily find the reason, in this case:
 <ul>
   <li>Error type</li>
@@ -53,5 +54,20 @@ Blackbox records all vital information so when the application crash, you can ea
   <li>Register Contents</li>
   <li>General system info(CPU,memory,OS,etc)</li>
  </ul>
+Messages aren’t displayed anywhere, so users aren’t bothered, they don’t even know it’s happening. What to record? Well, it’s up to you. In our case, name of loaded resource, would surely be a good bet. This way, on crash all you have to do is to check latest blackbox messages (for thread that crashed). But, what are these blackbox messages? Well, will be talking about <b>Crash Dump and Mini Dump files</b>. 
 
+<h3>Crash Dumps</h3>
+Crash dump or memory dump consists of the recorde state of the working memory of a program at a specific time, generally when that one has crashed.In practice, are used to assist in diagnosing and debbugging errors. Other key pieces of program state are usually dumped at the same time, including the processor registers, which may include the program counter and stack pointer, memory management information, and other processor and operating system flags and information. A snapshot dump is a memory dump requested by the computer operator or by the running program, after which the program is able to continue.
 
+<img src="https://www.drivethelife.com/uploadfiles/20180807/error-fix-blue-screen-memory-dump.png?raw=true">
+
+<h3>MiniDumps</h3>
+Minidumps are files containing the most important memory regions of a crashed process. When the process crashes, the minidump is written to the user’s disk. A minidump typically includes:
+
+  <ul>
+  <li>The runtime stack of each thread that was active during the time of the crash. This allows yout to reconstruct stack traces for all stacks and even infer variable values in some cases.</li>
+  <li>Thread contexts – that is, register values – at the time of the crash. This is especially relevant for stack walking.</li>
+  <li>The crash reason and an optional memory address associated to with the crash. For example, memory access violations. In the case of assertions, the assertion message is also included in the dump.</li>
+  <li>Meta data about the CPU architecture and the user’s operating system.</li>
+ </ul>
+ 
