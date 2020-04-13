@@ -121,6 +121,7 @@ So ,there you have it. You now know all the basic abot crash report, and how to 
 Down below you can read an article done by a programmer from The Witcher, explaining how was his experience proggramming one, talking about what we just saw but in action and giving some advices about the topic. 
 
 <img src="https://i.imgur.com/TOtVqjm.png?raw=true">
+
 <a href="http://msinilo.pl/blog2/post/p269/"> Crash handler/reporter (Win32) by Maciej Sinilo</a>
 
 <h2 id="biblio">Bibliography</h2>
